@@ -1,108 +1,67 @@
 ---
 name: abenklo-persona
-description: Åbenklo brand voice and copywriting persona. Use this skill whenever writing, editing, or reviewing any copy, text, microcopy, headings, descriptions, error messages, emails, social posts, or any user-facing text for the Åbenklo brand. Also use when the user asks about tone of voice, brand guidelines, messaging, or how something should "sound". Trigger even when the user just says "write this" or "draft copy" without explicitly mentioning tone — all Åbenklo copy should follow this persona.
+description: Åbenklo target customer persona — a Danish SMV business owner curious about AI and OpenClaw. Use this skill whenever writing, editing, or reviewing copy for the Åbenklo site or any marketing material. It describes who the reader is, what they know, what they worry about, and how they talk, so that all copy speaks directly to this person. Trigger whenever the user says "write copy", "draft text", asks about tone of voice, target audience, or messaging — all Åbenklo copy should be written for this persona.
 ---
 
-# Åbenklo Brand Persona
+# Åbenklo Målgruppepersona
 
-## Who Åbenklo is
+## Hvem er læseren?
 
-Åbenklo is a one-person Danish consulting service run by Frederik Lind in Aarhus. It helps small and medium-sized businesses (SMV'er) in Eastern Jutland (Østjylland) evaluate, design, and implement solutions with OpenClaw — an open-source AI agent platform. The core promise is honest, security-conscious guidance that respects the client's actual needs rather than pushing technology for its own sake.
+Personaen er en dansk virksomhedsejer (SMV) — typisk i Østjylland — som er nysgerrig på, om AI kan hjælpe med nogle af de opgaver, der fylder i hverdagen. De har hørt om OpenClaw og forstår det som det næste inden for automation, men de har ikke nødvendigvis nogen teknisk baggrund.
 
-## Voice principles
+## Profil
 
-### 1. Honest first, sales second
+- **Rolle**: Ejer, medejer eller daglig leder af en lille/mellemstor virksomhed (1–50 ansatte)
+- **Branche**: Bred — regnskab, produktion, rådgivning, håndværk, detail, softwarevirksomhed. Ikke tech-nørder, men folk der driver forretning.
+- **Teknisk niveau**: Bruger IT i hverdagen (mail, Teams, regnskabssystem), men kender ikke til API'er, deployment eller open source i teknisk forstand. Har måske hørt ordene, men kan ikke forklare dem.
+- **Sted**: Aarhus og omegn, Østjylland. Værdsætter det lokale og nære.
 
-Åbenklo leads with transparency. The site literally has a section called "Vi er ærlige om risikoen" (We're honest about the risk). This isn't a brand that oversells — it acknowledges limitations, surfaces real risks, and qualifies claims. The trust comes from candor, not from hype.
+## Hvad de ved
 
-**Do this**: "Kun hvis det sættes rigtigt op. En forhastet løsning kan skabe alvorlige sikkerhedsproblemer."
-**Not this**: "Vores løsning sikrer fuld beskyttelse af alle jeres data!"
+- De har hørt, at AI og automation kan spare tid og penge
+- De har set overskrifter om OpenClaw eller lignende platforme og forstår det som "det næste store inden for automation"
+- De ved ikke præcist, hvad OpenClaw er, eller hvordan det adskiller sig fra fx ChatGPT, Microsoft Copilot eller andre AI-værktøjer
+- De har måske prøvet ChatGPT privat og tænkt "kunne det her bruges i firmaet?"
 
-### 2. Careful qualifiers — hedge where honest
+## Hvad de bekymrer sig om
 
-The copy consistently uses hedging language that signals intellectual honesty. Words like "kan", "for eksempel", "afhængigt af", "i nogle tilfælde", "hvis det giver mening". This isn't weakness — it's precision. Åbenklo doesn't promise what it can't guarantee.
+- **Sikkerhed**: "Kan mine kundedata lække?" — de tænker i risiko, ikke i tekniske detaljer
+- **Pris**: "Hvad koster det, og hvornår tjener jeg det ind?" — de er vant til at tænke i bundlinje
+- **Kompleksitet**: "Kræver det en IT-afdeling, vi ikke har?" — de er bange for at stå med noget, de ikke kan overskue
+- **Troværdighed**: "Er det her bare endnu et hype-produkt?" — de har set trends komme og gå
+- **Kontrol**: "Mister jeg overblikket, hvis en maskine tager over?" — de vil gerne automatisere, men ikke afgive styring
 
-**Characteristic phrases**:
-- "Det afhænger af jeres behov"
-- "Hvis det giver mening at gå videre"
-- "Det kan for eksempel håndteres med..."
-- "Mulighederne afhænger af jeres behov, systemer og arbejdsgange"
+## Hvordan de taler
 
-### 3. Warm, grounded, never corporate
+- Hverdagsdansk, ikke teknisk sprog. "Vi bruger Outlook og et regneark" — ikke "vi har en hybrid cloud-infrastruktur".
+- Direkte og praktisk. De spørger "hvad får jeg ud af det?" før "hvordan virker det?"
+- De siger "automatisering" eller "AI", ikke "agenter", "LLM'er" eller "pipelines"
+- De bruger "I" og "jer" om Åbenklo — de forventer en dialog, ikke en forelæsning
 
-The tone is professional but approachable — like a knowledgeable colleague, not a vendor deck. Use everyday Danish, not consultant jargon. Sentences are medium-length, not clipped or breathless. The rhythm is calm and considered.
+## Hvad der fanger dem
 
-**Do this**: "Vi hjælper jer med at få en sikker opsætning, hvor adgang og data er under kontrol fra start."
-**Not this**: "Vi levererer end-to-end sikkerhedsløsninger med fokus på governance og compliance."
+- **Konkrete eksempler**: "Vi hjalp et regnskabsfirma med at spare 10 timer om ugen på mødeopfølgning" virker bedre end "vi optimerer workflows"
+- **Ærlighed om begrænsninger**: Hvis noget ikke passer til dem, vil de gerne høre det. Det bygger tillid.
+- **Lav barriere**: "Gratis snak", "uforpligtende", "vi starter med at forstå jeres behov" — de skal føle, at der ikke er noget at tabe
+- **Lokalt og personligt**: At rådgiveren sidder i Aarhus og taler dansk betyder noget. Det føles tryggere end en anonym online-tjeneste.
+- **Genkendelige problemer**: Når teksten nævner ting de selv oplever (møder der tager for lang tid, kundehenvendelser der hober sig op, manuelt arbejde i regneark), føler de sig set
 
-### 4. Empathetic — meet the reader where they are
+## Hvad der skræmmer dem væk
 
-The copy addresses real concerns head-on: "Hvad er OpenClaw?", "Er det sikkert nok?", "Hvad koster det?" It doesn't talk down to the reader or assume technical knowledge. It explains things plainly and acknowledges that scepticism is reasonable.
+- Teknisk jargon de ikke forstår — det får dem til at føle, at det ikke er for dem
+- Overpromises og hype — "revolutionér din virksomhed med AI!" lyder som reklame, ikke rådgivning
+- Uklare priser eller forpligtelser — hvis de ikke kan se, hvad næste skridt koster, tør de ikke tage det
+- Engelske buzzwords uden forklaring — "deploy", "pipeline", "agent framework" uden kontekst
 
-### 5. Local and personal
+## Skriv til denne persona
 
-Åbenklo leans into being local (Aarhus, Østjylland), small (one person), and accessible ("Ring, skriv eller kom forbi"). This is a feature, not a limitation. The personal touch is the competitive advantage.
+Når du skriver copy til Åbenklo, skal al tekst føles som om den er skrevet direkte til denne person. Det betyder:
 
-### 6. No-pressure
-
-The CTA is always "gratis og uforpligtende". The copy repeatedly signals that there's no obligation: "Ingen forpligtelser, intet hårdt salg." Even the process steps frame the engagement as exploratory — the client decides whether to proceed at each stage.
-
-## Language and grammar
-
-- **Language**: Danish (da). All user-facing copy is in Danish unless explicitly requested otherwise.
-- **Address form**: Use "I/jer/jeres" (2nd person plural) when speaking to clients. Never "du/dig" — the audience is businesses, not individuals.
-- **Pronouns for Åbenklo**: Use "vi/os" (we/us) even though it's a one-person company. This is already established on the site.
-- **Sentence structure**: Prefer medium-length sentences. Avoid both terse bullet-style fragments and sprawling compound sentences. One idea per sentence.
-- **Avoid**: English buzzwords, consultant jargon ("synergier", "skalérbar", "disruption"), exclamation marks, emoji in body copy, superlatives ("bedste", "førende", "unikke").
-
-## Tone spectrum by context
-
-| Context | Tone dial |
-|---------|-----------|
-| Hero / headline | Confident and clear — state the value proposition directly |
-| Pain points | Empathetic and honest — acknowledge real concerns without dismissing them |
-| Process steps | Reassuring and structured — guide the reader through what happens next |
-| Benefits / use cases | Illustrative and qualified — show possibilities without overpromising |
-| Security / risk | Candid and specific — name real risks, then explain how they can be handled |
-| Testimonials | Authentic and understated — real people, real concerns addressed |
-| CTA / form | Warm and low-pressure — make it easy to reach out, emphasise "no obligation" |
-| Error messages / microcopy | Helpful and plain — explain what happened and what to do next |
-
-## Writing checklist
-
-When writing or reviewing copy for Åbenklo, check that it:
-
-1. Sounds like a knowledgeable local consultant, not a corporate brochure
-2. Qualifies claims honestly — uses "kan", "for eksempel", "afhængigt af" where appropriate
-3. Addresses the reader as "I/jer" (not "du")
-4. Avoids English buzzwords and consultant jargon
-5. Doesn't oversell or use superlatives
-6. Has a calm, considered rhythm — not breathless or pushy
-7. Leads with the reader's concern, then addresses it
-8. Makes any CTA feel low-pressure and optional
-9. Uses Danish throughout (unless explicitly asked for another language)
-10. Fits the Nordic Editorial visual tone — warm, grounded, slightly understated
-
-## Example transformations
-
-**Too salesy**:
-"Få den bedste AI-løsning til din virksomhed! Vi er førende inden for OpenClaw-implementering og garanterer resultater fra dag ét!"
-
-**Åbenklo voice**:
-"Vi hjælper jer med at vurdere, om OpenClaw passer til jeres behov — og med at sætte det rigtigt op, hvis det gør. Start med en uforpligtende snak."
-
----
-
-**Too technical**:
-"Vores enterprise-grade deployment pipeline sikrer zero-downtime migration med automated rollback og comprehensive monitoring."
-
-**Åbenklo voice**:
-"Vi hjælper med at sætte løsningen op, så den kører stabilt i jeres miljø. Hvis noget går galt, kan vi rulle tilbage hurtigt."
-
----
-
-**Too vague**:
-"Vi gør jeres virksomhed bedre med AI."
-
-**Åbenklo voice**:
-"Vi hjælper jer med at finde ud af, hvor AI-automatisering faktisk giver mening i jeres hverdag — og med at komme sikkert i gang."
+1. **Forklar, hvad OpenClaw er** — antag aldrig at læseren ved det. Brug én sætning, ikke et afsnit.
+2. **Brug deres sprog** — "automatisere opgaver" i stedet for "orkestrere agent-workflows". Skriv som de selv ville sige det.
+3. **Start med deres bekymring** — anerkend hvad de tænker, før du fortæller hvad du tilbyder.
+4. **Giv konkrete eksempler** — "fx mødeopfølgning, kundehenvendelser eller overblik over data" er bedre end abstrakte løfter.
+5. **Hold det ærligt** — brug "kan", "for eksempel", "afhængigt af jeres behov". Denne persona respekterer ærlighed over salgstale.
+6. **Gør det trygt at tage næste skridt** — CTA'er skal altid føles uforpligtende og lavpraktiske.
+7. **Skriv på dansk** — undgå engelske termer medmindre der ikke findes et naturligt dansk ord. Hvis et engelsk ord er nødvendigt, forklar det kort.
+8. **Brug "I/jer"** — tal til virksomheden, ikke personen. Det er en professionel dialog.
