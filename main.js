@@ -26,7 +26,7 @@ if (form) {
       `;
     } catch {
       btn.disabled = false;
-      btn.textContent = 'Send — det er gratis';
+      btn.textContent = 'Book gratis AI-Sikkerhedsvurdering';
       alert('Noget gik galt. Prøv igen eller skriv direkte til os.');
     }
   });

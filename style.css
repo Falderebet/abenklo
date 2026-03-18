@@ -573,6 +573,159 @@ body {
 .footer__copy a:hover { color: var(--stone-900); }
 .footer__tagline { font-family: var(--font-sans); font-size: 12px; color: var(--stone-400); display: none; }
 
+/* ── Subsidy (SMV:Digital) ───────────────────────────── */
+.subsidy {
+  background: var(--green-50);
+  padding: 80px 0;
+  border-top: 1px solid var(--stone-200);
+  border-bottom: 1px solid var(--stone-200);
+}
+.subsidy__inner {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.subsidy__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  border: 1.5px solid var(--green);
+  padding: 28px 24px;
+  background: var(--white);
+  box-shadow: var(--glow-green);
+}
+.subsidy__amount {
+  font-family: var(--font-mono);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+  letter-spacing: -.5px;
+}
+.subsidy__label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: var(--stone-900);
+  margin-top: 6px;
+}
+.subsidy__sublabel {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--stone-500);
+  letter-spacing: .2px;
+}
+.subsidy__lead {
+  font-size: 16.5px;
+  line-height: 1.78;
+  color: var(--stone-700);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.subsidy__lead strong { font-weight: 600; color: var(--stone-900); }
+.subsidy__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.subsidy__list li {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--stone-700);
+  padding-left: 20px;
+  position: relative;
+}
+.subsidy__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+}
+
+/* ── Security transparency ───────────────────────────── */
+.security {
+  background: var(--stone-100);
+  padding: 80px 0;
+  border-top: 1px solid var(--stone-200);
+  border-bottom: 1px solid var(--stone-200);
+}
+.security__intro {
+  font-size: 16.5px;
+  line-height: 1.78;
+  color: var(--stone-500);
+  max-width: 760px;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+.security__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0;
+  border: 1px solid var(--stone-200);
+}
+.security__risk {
+  padding: 32px 28px;
+  border-right: 1px solid var(--stone-200);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.security__risk:last-child { border-right: none; }
+.security__risk-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--stone-500);
+  background: var(--stone-100);
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+.security__risk h3 {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--stone-900);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.security__risk > p {
+  font-size: 14px;
+  color: var(--stone-500);
+  line-height: 1.7;
+  font-weight: 300;
+  flex: 1;
+}
+.security__solution {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--stone-200);
+}
+.security__solution-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+.security__solution p {
+  font-size: 13.5px;
+  color: var(--stone-700);
+  line-height: 1.68;
+  font-weight: 400;
+}
+
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 768px) {
   .contact__inner { grid-template-columns: 1fr; gap: 48px; }
@@ -587,6 +740,9 @@ body {
   .testimonial { border-right: none; border-bottom: 1px solid var(--stone-200); }
   .testimonial:last-child { border-bottom: none; }
   .benefit { border-right: none; }
+  .subsidy__inner { grid-template-columns: 1fr; gap: 32px; }
+  .security__risk { border-right: none; border-bottom: 1px solid var(--stone-200); }
+  .security__risk:last-child { border-bottom: none; }
 }
 
 @media (max-width: 480px) {
@@ -594,5 +750,5 @@ body {
   .hero__actions { flex-direction: column; align-items: flex-start; }
   .hero__trust { flex-direction: column; gap: 6px; }
   .hero__trust .sep { display: none; }
-  .pain, .how, .benefits, .proof, .contact { padding: 60px 0; }
+  .pain, .how, .benefits, .proof, .contact, .subsidy, .security { padding: 60px 0; }
 }
