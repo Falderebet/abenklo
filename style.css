@@ -104,6 +104,17 @@ body {
   color: var(--white);
 }
 
+.btn--nav {
+  font-family: var(--font-mono);
+  color: var(--green);
+  border: 1.5px solid var(--green);
+  background: transparent;
+}
+.btn--nav:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
 /* ── Nav ─────────────────────────────────────────────── */
 .nav {
   position: sticky;
@@ -280,7 +291,13 @@ body {
 .pain__card:last-child { border-right: none; }
 .pain__card:hover { background: var(--stone-50); }
 .pain__card:hover::before { transform: scaleX(1); }
-.pain__icon { font-size: 28px; margin-bottom: 16px; }
+.pain__icon {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--green);
+  margin-bottom: 16px;
+}
 .pain__card h3 {
   font-family: var(--font-serif);
   font-size: 19px;
