@@ -10,7 +10,11 @@
       "WebSearch",
       "WebFetch(domain:github.com)",
       "Bash(powershell.exe -Command \"irm https://raw.githubusercontent.com/coollabsio/coolify-cli/main/scripts/install.ps1 | iex\" 2>&1)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(bash deploy.sh)"
     ]
   }
 }
