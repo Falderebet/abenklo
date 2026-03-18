@@ -3,7 +3,14 @@
     "allow": [
       "Bash(which coolify:*)",
       "Bash(curl:*)",
-      "Bash(npm list:*)"
+      "Bash(npm list:*)",
+      "Bash(gh auth:*)",
+      "Bash(winget install:*)",
+      "Bash(export:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(powershell.exe -Command \"irm https://raw.githubusercontent.com/coollabsio/coolify-cli/main/scripts/install.ps1 | iex\" 2>&1)",
+      "Bash(git init:*)"
     ]
   }
 }
