@@ -7,7 +7,7 @@
   <meta name="description" content="Åbenklo hjælper danske SMV'er med at installere og bruge open source-software sikkert. Få en gratis gennemgang af dine muligheder." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,11 +17,11 @@
     <div class="container nav__inner">
       <a href="#" class="nav__logo">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2Z" fill="#1d4ed8"/>
+          <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2Z" fill="#4a7c59"/>
           <path d="M9 14c0-2.761 2.239-5 5-5s5 2.239 5 5-2.239 5-5 5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
           <path d="M14 9v2M14 17v2M9 14H7M21 14h-2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <span>åbenklo</span>
+        <span>Åbenklo</span>
       </a>
       <a href="#kontakt" class="btn btn--sm">Gratis gennemgang</a>
     </div>
@@ -30,33 +30,36 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero__inner">
-      <div class="hero__badge">Til danske SMV'er</div>
+      <div class="hero__eyebrow"><span class="blink">▋</span> Til danske SMV'er</div>
       <h1 class="hero__headline">
-        Har du hørt om&nbsp;åbenklo,<br />
-        men ved ikke hvad det gør for dig?
+        Har du hørt om åbenklo,<br />
+        men ved ikke hvad<br />
+        det gør for dig?
       </h1>
+      <div class="hero__rule"></div>
       <p class="hero__sub">
         Åbenklo er open source-software, der kan spare din virksomhed tid og penge — men kun hvis det er installeret rigtigt og sikkert. Vi viser dig præcis hvordan.
       </p>
       <div class="hero__actions">
         <a href="#kontakt" class="btn btn--primary btn--lg">Få en gratis gennemgang</a>
-        <a href="#hvad-er" class="btn btn--ghost btn--lg">Lær mere ↓</a>
+        <a href="#hvad-er" class="btn btn--ghost btn--lg">Lær mere</a>
       </div>
       <div class="hero__trust">
-        <span>✓ Ingen forpligtelse</span>
-        <span>✓ Svar inden for 24 timer</span>
-        <span>✓ 100% dansk support</span>
+        <span>Ingen forpligtelse</span>
+        <span class="sep">·</span>
+        <span>Svar inden for 24 timer</span>
+        <span class="sep">·</span>
+        <span>100% dansk support</span>
       </div>
-    </div>
-    <div class="hero__wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/></svg>
     </div>
   </section>
 
   <!-- PAIN POINTS -->
   <section class="pain" id="hvad-er">
     <div class="container">
-      <h2 class="section-title">Det du sikkert tænker</h2>
+      <div class="section-header">
+        <h2 class="section-title">Det du sikkert tænker</h2>
+      </div>
       <div class="pain__grid">
         <div class="pain__card">
           <div class="pain__icon">🤔</div>
@@ -80,11 +83,13 @@
   <!-- HOW IT WORKS -->
   <section class="how">
     <div class="container">
-      <h2 class="section-title">Sådan hjælper vi dig</h2>
-      <p class="section-sub">Tre trin fra interesse til sikker installation</p>
+      <div class="section-header">
+        <h2 class="section-title">Sådan hjælper vi dig</h2>
+        <p class="section-sub">Tre trin fra interesse til sikker installation</p>
+      </div>
       <div class="steps">
         <div class="step">
-          <div class="step__num">1</div>
+          <div class="step__num">I</div>
           <div class="step__body">
             <h3>Gratis gennemgang</h3>
             <p>Vi snakker om din virksomhed: hvad I gør, hvad I kæmper med, og om åbenklo overhovedet giver mening for jer. Ingen salg, ingen prestige.</p>
@@ -92,7 +97,7 @@
         </div>
         <div class="step__connector" aria-hidden="true"></div>
         <div class="step">
-          <div class="step__num">2</div>
+          <div class="step__num">II</div>
           <div class="step__body">
             <h3>Tilpasset plan</h3>
             <p>Vi laver en konkret og sikker installationsplan der passer til jeres størrelse, budget og IT-niveau — med GDPR og datasikkerhed i centrum.</p>
@@ -100,7 +105,7 @@
         </div>
         <div class="step__connector" aria-hidden="true"></div>
         <div class="step">
-          <div class="step__num">3</div>
+          <div class="step__num">III</div>
           <div class="step__body">
             <h3>Op at køre</h3>
             <p>I er kørende med åbenklo. Og vi er stadig her hvis noget driller — med dansk support på dansk tid.</p>
@@ -113,7 +118,9 @@
   <!-- BENEFITS -->
   <section class="benefits">
     <div class="container">
-      <h2 class="section-title">Hvad din virksomhed får</h2>
+      <div class="section-header">
+        <h2 class="section-title">Hvad din virksomhed får</h2>
+      </div>
       <div class="benefits__grid">
         <div class="benefit">
           <div class="benefit__icon">💶</div>
@@ -152,7 +159,9 @@
   <!-- SOCIAL PROOF -->
   <section class="proof">
     <div class="container">
-      <h2 class="section-title">Hvad andre SMV'er siger</h2>
+      <div class="section-header">
+        <h2 class="section-title">Hvad andre SMV'er siger</h2>
+      </div>
       <div class="testimonials">
         <blockquote class="testimonial">
           <p>"Vi vidste slet ikke at åbenklo fandtes, men efter gennemgangen stod det klart at det kunne erstatte to programmer vi betalte for hver måned."</p>
@@ -183,12 +192,13 @@
   <section class="contact" id="kontakt">
     <div class="container contact__inner">
       <div class="contact__copy">
-        <h2>Book din gratis gennemgang</h2>
+        <h2>Book din gratis<br />gennemgang</h2>
+        <div class="contact__rule"></div>
         <p>Fortæl os lidt om din virksomhed, så ringer eller skriver vi til dig inden for 24 timer. Ingen forpligtelse — kun en ærlig snak om hvad åbenklo kan gøre for jer.</p>
         <ul class="contact__checklist">
-          <li>✓ Gratis og uforpligtende</li>
-          <li>✓ Svar inden for 24 timer på hverdage</li>
-          <li>✓ Vi ringer hvis du foretrækker det</li>
+          <li>Gratis og uforpligtende</li>
+          <li>Svar inden for 24 timer på hverdage</li>
+          <li>Vi ringer hvis du foretrækker det</li>
         </ul>
       </div>
       <form class="form" id="leadForm" novalidate>
@@ -237,11 +247,11 @@
     <div class="container footer__inner">
       <a href="#" class="nav__logo">
         <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2Z" fill="#1d4ed8"/>
+          <path d="M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12 12-5.373 12-12S20.627 2 14 2Z" fill="#4a7c59"/>
           <path d="M9 14c0-2.761 2.239-5 5-5s5 2.239 5 5-2.239 5-5 5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
           <path d="M14 9v2M14 17v2M9 14H7M21 14h-2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <span>åbenklo</span>
+        <span>Åbenklo</span>
       </a>
       <p class="footer__copy">© 2026 Åbenklo · <a href="#privacy" id="privacy">Privatlivspolitik</a> · CVR: xxxxxxxx</p>
       <p class="footer__tagline">Open source, gjort simpelt for danske virksomheder.</p>
