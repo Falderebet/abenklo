@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(which coolify:*)"
+      "Bash(which coolify:*)",
+      "Bash(curl:*)",
+      "Bash(npm list:*)"
     ]
   }
 }
