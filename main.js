@@ -25,10 +25,10 @@ if (form) {
       // Replace form with success message
       form.classList.add('form--success');
       form.innerHTML = `
-        <div class="success-icon">✅</div>
+        <div class="success-marker">✓</div>
+        <p class="success-label">/* besked modtaget */</p>
         <h3>Tak, ${escapeHtml(data.name || 'du')}!</h3>
-        <p>Vi vender tilbage inden for 24 timer på hverdage.<br/>
-           Kig også i din spam-mappe hvis du ikke hører fra os.</p>
+        <p>Vi vender tilbage inden for 24 timer på hverdage.<br/>Kig også i din spam-mappe, hvis du ikke hører fra os.</p>
       `;
     } catch {
       btn.disabled = false;
