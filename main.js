@@ -12,9 +12,12 @@ if (form) {
     const data = Object.fromEntries(new FormData(form));
 
     try {
-      // POST to /api/leads when backend is wired up.
-      // For now, simulate a short delay and show success.
-      await new Promise(r => setTimeout(r, 900));
+      const res = await fetch('https://formspree.io/f/xnjgwqvy', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      });
+      if (!res.ok) throw new Error('Formspree error');
 
       // Track form submission in Plausible
       window.plausible?.('Lead Form Submit');
