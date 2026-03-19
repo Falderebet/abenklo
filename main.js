@@ -16,6 +16,9 @@ if (form) {
       // For now, simulate a short delay and show success.
       await new Promise(r => setTimeout(r, 900));
 
+      // Track form submission in Plausible
+      window.plausible?.('Lead Form Submit');
+
       // Replace form with success message
       form.classList.add('form--success');
       form.innerHTML = `
