@@ -9,6 +9,11 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-16779625532');
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16779625532/enEFCMXwtowcELyIk8E-',
+      'value': 1.0,
+      'currency': 'DKK'
+    });
 
     function gtag_report_conversion(url, conversionData = {}) {
       var conversionTargets = [
