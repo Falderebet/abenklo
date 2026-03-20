@@ -22,6 +22,9 @@ if (form) {
       // Track form submission in Plausible
       window.plausible?.('Lead Form Submit');
 
+      // Track Google Ads conversion after the form submission succeeds.
+      window.gtag_report_conversion?.();
+
       // Replace form with success message
       form.classList.add('form--success');
       form.innerHTML = `

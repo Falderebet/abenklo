@@ -9,6 +9,28 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-16779625532');
+
+    function gtag_report_conversion(url, conversionData = {}) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+
+      if (typeof window.gtag !== 'function') {
+        callback();
+        return false;
+      }
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16779625532/GL09CPawhusZELyIk8E-',
+        'value': 1.0,
+        'currency': 'DKK',
+        'event_callback': callback,
+        ...conversionData
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
