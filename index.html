@@ -11,7 +11,16 @@
     gtag('config', 'AW-16779625532');
 
     function gtag_report_conversion(url, conversionData = {}) {
+      var conversionTargets = [
+        'AW-16779625532/GL09CPawhusZELyIk8E-',
+        'AW-16779625532/SyfcCOvQsowcELyIk8E-'
+      ];
+      var callbackCalled = false;
       var callback = function () {
+        if (callbackCalled) {
+          return;
+        }
+        callbackCalled = true;
         if (typeof(url) !== 'undefined') {
           window.location = url;
         }
@@ -22,12 +31,14 @@
         return false;
       }
 
-      gtag('event', 'conversion', {
-        'send_to': 'AW-16779625532/GL09CPawhusZELyIk8E-',
-        'value': 1.0,
-        'currency': 'DKK',
-        'event_callback': callback,
-        ...conversionData
+      conversionTargets.forEach(function (sendTo) {
+        gtag('event', 'conversion', {
+          'send_to': sendTo,
+          'value': 1.0,
+          'currency': 'DKK',
+          'event_callback': callback,
+          ...conversionData
+        });
       });
       return false;
     }
